@@ -18,7 +18,7 @@ WORKDIR ${SOFTHSM2_SOURCES}
 
 RUN git checkout ${SOFTHSM2_VERSION} -b ${SOFTHSM2_VERSION} \
     && sh autogen.sh \
-    && ./configure --prefix=/usr/local \
+    && ./configure --prefix=/softhsm \
     && make \
     && make install
 

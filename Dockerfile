@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM anapsix/alpine-java:8_jdk_unlimited
 
 ENV SOFTHSM2_VERSION=2.5.0 \
     SOFTHSM2_SOURCES=/tmp/softhsm2
